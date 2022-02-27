@@ -4,9 +4,9 @@ name: test-cluster
 networking:
   ipFamily: ipv6
 nodes:
-- role: control-plane
-  image: kindest/node:v1.22.5
-  extraPortMappings:
-  - containerPort: 30000
-    hostPort: 30000
-    protocol: TCP
+  - role: control-plane
+    image: kindest/node:v1.22.5
+    extraPortMappings:
+      - containerPort: 30000
+        hostPort: 30000
+        protocol: TCP
